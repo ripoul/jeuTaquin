@@ -69,7 +69,7 @@ public class Takin {
         if(cv==0){
             throw new MouvementException("Mouvement impossible : case vide déja à gauche");
         }else{
-            jeu[lv][cv]=jeu[lv][cv+1];
+            jeu[lv][cv]=jeu[lv][cv-1];
             cv=cv-1;
             jeu[lv][cv]=null;
         }
@@ -97,5 +97,9 @@ public class Takin {
 
     public int getCv() {
         return cv;
+    }
+
+    public Integer getCase(int ligne, int colone){
+        return this.jeu[ligne][colone];
     }
 }

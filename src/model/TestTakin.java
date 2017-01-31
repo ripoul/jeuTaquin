@@ -7,13 +7,24 @@ import model.exception.MouvementException;
  */
 public class TestTakin {
     public static void main(String[] args) {
+
+        Integer n=new Integer(32);
+        System.out.println(n.toString());
+        System.out.println();
+
         Takin jeu=new Takin();
-        System.out.println(jeu.getJeu());
-        try{
-            jeu.bas();
-        }catch (MouvementException e){
-            e.printStackTrace();
+
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if (jeu.getCase(i, j)!=null){
+                    System.out.print(jeu.getCase(i, j)+" | ");
+                }else{
+
+                }
+            }
+            System.out.println("");
         }
+
         try {
             jeu.haut();
         }
@@ -21,5 +32,15 @@ public class TestTakin {
             ee.printStackTrace();
         }
 
+        for(int i=0; i<5; i++){
+            for(int j=0; j<5; j++){
+                if (jeu.getCase(i, j)!=null){
+                    System.out.print(jeu.getCase(i, j)+" | ");
+                }else{
+
+                }
+            }
+            System.out.println("");
+        }
     }
 }
