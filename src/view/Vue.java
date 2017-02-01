@@ -7,9 +7,8 @@ package view;
 import controleur.Ctrl;
 import model.Takin;
 
-import java.awt.Dimension;
-import java.awt.event.KeyEvent;
 import javax.swing.*;
+
 import java.awt.*;
 
 //proxyPort 1 à 65535
@@ -135,7 +134,7 @@ public class Vue {
 
     public static void main(String[] args) {
         setBestLookAndFeelAvailable();
-        Vue fenetre = new Vue();
+		Vue fenetre = new Vue();
     }
 
     public void maj() {
