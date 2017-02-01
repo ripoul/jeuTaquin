@@ -37,6 +37,9 @@ public class Ctrl implements KeyListener{
             }catch (MouvementException e){
                 JOptionPane.showMessageDialog(null,"on ne peut pas aller en haut","ERREUR",JOptionPane.ERROR_MESSAGE);
             }
+            if(jeu.gagne()){
+                JOptionPane.showMessageDialog(null,"GAGNE");
+            }
         }
 
         if (keyEvent.getKeyCode()==VK_DOWN){
@@ -46,6 +49,10 @@ public class Ctrl implements KeyListener{
                 vue.maj();
             }catch (MouvementException e){
                 JOptionPane.showMessageDialog(null,"on ne peut pas aller en bas","ERREUR",JOptionPane.ERROR_MESSAGE);
+            }
+
+            if(jeu.gagne()){
+                JOptionPane.showMessageDialog(null,"GAGNE");
             }
         }
 
@@ -57,6 +64,9 @@ public class Ctrl implements KeyListener{
             }catch (MouvementException e){
                 JOptionPane.showMessageDialog(null,"on ne peut pas aller a gauche","ERREUR",JOptionPane.ERROR_MESSAGE);
             }
+            if(jeu.gagne()){
+                JOptionPane.showMessageDialog(null,"GAGNE");
+            }
         }
 
         if (keyEvent.getKeyCode()==VK_RIGHT){
@@ -67,6 +77,32 @@ public class Ctrl implements KeyListener{
             }catch (MouvementException e){
                 JOptionPane.showMessageDialog(null,"on ne peut pas aller a droite","ERREUR",JOptionPane.ERROR_MESSAGE);
             }
+            if(jeu.gagne()){
+                JOptionPane.showMessageDialog(null,"GAGNE");
+            }
+        }
+
+        if(keyEvent.getKeyCode()==VK_F1){
+            System.out.println("F1");
+            jeu.setCv(3);
+            jeu.setLv(4);
+
+            int cpt=0;
+            for(int i=0; i<5; i++){
+                for(int j=0; j<5; j++){
+                    if(i==4 && j==4){
+                        this.jeu.setCase(i, j, null);
+                    }
+                    else{
+                        this.jeu.setCase(i, j, cpt);
+                        cpt++;
+                    }
+                }
+            }
+
+            jeu.setCase(4,4,23);
+            jeu.setCase(4,3,null);
+            vue.maj();
         }
     }
 

@@ -138,157 +138,132 @@ public class Vue {
         Vue fenetre = new Vue();
     }
 
-    public void maj(){
+    public void maj() {
 
-        if(jeu.getCase(0, 0)==null){
+        if (jeu.getCase(0, 0) == null) {
             l00.setText("");
-        }
-        else{
+        } else {
             l00.setText(jeu.getCase(0, 0).toString());
         }
 
-        if(jeu.getCase(0, 1)!=null){
+        if (jeu.getCase(0, 1) != null) {
             l01.setText(jeu.getCase(0, 1).toString());
-        }
-        else{
+        } else {
             l01.setText("");
         }
-        if(jeu.getCase(0, 2)!=null){
+        if (jeu.getCase(0, 2) != null) {
             l02.setText(jeu.getCase(0, 2).toString());
-        }
-        else{
+        } else {
             l02.setText("");
         }
-        if(jeu.getCase(0, 3)!=null){
+        if (jeu.getCase(0, 3) != null) {
             l03.setText(jeu.getCase(0, 3).toString());
-        }
-        else{
+        } else {
             l03.setText("");
         }
-        if(jeu.getCase(0, 4)!=null){
+        if (jeu.getCase(0, 4) != null) {
             l04.setText(jeu.getCase(0, 4).toString());
-        }
-        else{
+        } else {
             l04.setText("");
         }
-        if(jeu.getCase(1, 0)!=null){
+        if (jeu.getCase(1, 0) != null) {
             l10.setText(jeu.getCase(1, 0).toString());
-        }
-        else{
+        } else {
             l10.setText("");
         }
-        if(jeu.getCase(1, 1)!=null){
+        if (jeu.getCase(1, 1) != null) {
             l11.setText(jeu.getCase(1, 1).toString());
-        }
-        else{
+        } else {
             l11.setText("");
         }
-        if(jeu.getCase(1, 2)!=null){
+        if (jeu.getCase(1, 2) != null) {
             l12.setText(jeu.getCase(1, 2).toString());
-        }
-        else{
+        } else {
             l12.setText("");
         }
-        if(jeu.getCase(1, 3)!=null){
+        if (jeu.getCase(1, 3) != null) {
             l13.setText(jeu.getCase(1, 3).toString());
-        }
-        else{
+        } else {
             l13.setText("");
         }
-        if(jeu.getCase(1, 4)!=null){
+        if (jeu.getCase(1, 4) != null) {
             l14.setText(jeu.getCase(1, 4).toString());
-        }
-        else{
+        } else {
             l14.setText("");
         }
-        if(jeu.getCase(2, 0)!=null){
+        if (jeu.getCase(2, 0) != null) {
             l20.setText(jeu.getCase(2, 0).toString());
-        }
-        else{
+        } else {
             l20.setText("");
         }
-        if(jeu.getCase(2, 1)!=null){
+        if (jeu.getCase(2, 1) != null) {
             l21.setText(jeu.getCase(2, 1).toString());
-        }
-        else{
+        } else {
             l21.setText("");
         }
-        if(jeu.getCase(2, 2)!=null){
+        if (jeu.getCase(2, 2) != null) {
             l22.setText(jeu.getCase(2, 2).toString());
-        }
-        else{
+        } else {
             l22.setText("");
         }
-        if(jeu.getCase(2, 3)!=null){
+        if (jeu.getCase(2, 3) != null) {
             l23.setText(jeu.getCase(2, 3).toString());
-        }
-        else{
+        } else {
             l23.setText("");
         }
-        if(jeu.getCase(2, 4)!=null){
+        if (jeu.getCase(2, 4) != null) {
             l24.setText(jeu.getCase(2, 4).toString());
-        }
-        else{
+        } else {
             l24.setText("");
         }
-        if(jeu.getCase(3, 0)!=null){
+        if (jeu.getCase(3, 0) != null) {
             l30.setText(jeu.getCase(3, 0).toString());
-        }
-        else{
+        } else {
             l30.setText("");
         }
-        if(jeu.getCase(3, 1)!=null){
+        if (jeu.getCase(3, 1) != null) {
             l31.setText(jeu.getCase(3, 1).toString());
-        }
-        else{
+        } else {
             l31.setText("");
         }
-        if(jeu.getCase(3, 2)!=null){
+        if (jeu.getCase(3, 2) != null) {
             l32.setText(jeu.getCase(3, 2).toString());
-        }
-        else{
+        } else {
             l32.setText("");
         }
-        if(jeu.getCase(3, 3)!=null){
+        if (jeu.getCase(3, 3) != null) {
             l33.setText(jeu.getCase(3, 3).toString());
-        }
-        else{
+        } else {
             l33.setText("");
         }
-        if(jeu.getCase(3, 4)!=null){
+        if (jeu.getCase(3, 4) != null) {
             l34.setText(jeu.getCase(3, 4).toString());
-        }
-        else{
+        } else {
             l34.setText("");
         }
-        if(jeu.getCase(4, 0)!=null){
+        if (jeu.getCase(4, 0) != null) {
             l40.setText(jeu.getCase(4, 0).toString());
-        }
-        else{
+        } else {
             l40.setText("");
         }
-        if(jeu.getCase(4, 1)!=null){
+        if (jeu.getCase(4, 1) != null) {
             l41.setText(jeu.getCase(4, 1).toString());
-        }
-        else{
+        } else {
             l41.setText("");
         }
-        if(jeu.getCase(4, 2)!=null){
+        if (jeu.getCase(4, 2) != null) {
             l42.setText(jeu.getCase(4, 2).toString());
-        }
-        else{
+        } else {
             l42.setText("");
         }
-        if(jeu.getCase(4, 3)!=null){
+        if (jeu.getCase(4, 3) != null) {
             l43.setText(jeu.getCase(4, 3).toString());
-        }
-        else{
+        } else {
             l43.setText("");
         }
-        if(jeu.getCase(4, 4)!=null){
+        if (jeu.getCase(4, 4) != null) {
             l44.setText(jeu.getCase(4, 4).toString());
-        }
-        else{
+        } else {
             l44.setText("");
         }
     }

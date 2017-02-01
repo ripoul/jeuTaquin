@@ -99,7 +99,19 @@ public class Takin {
         return cv;
     }
 
+    public void setLv(int lv) {
+        this.lv = lv;
+    }
+
+    public void setCv(int cv) {
+        this.cv = cv;
+    }
+
     public Integer getCase(int ligne, int colone){
         return this.jeu[ligne][colone];
+    }
+
+    public void setCase(int ligne, int colone, Integer var) {
+        this.jeu[ligne][colone]=var;
     }
 }
